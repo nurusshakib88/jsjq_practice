@@ -64,6 +64,7 @@ function textReset() {
 	document.getElementById('d_text').innerHTML = "This is a Text. You can change the text style by clicking the buttons above";
 	document.getElementById('d_text').style.fontFamily = "sansserif";
 	document.getElementById('d_text').style.color = "black";
+	document.getElementById('d_text').style.fontSize = "30px";
 }
 
 
