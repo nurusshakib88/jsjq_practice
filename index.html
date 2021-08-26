@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Links-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+
+    <title>JS/JQ</title>
+  </head>
+  <body>
+
+
+<section class="js_events">
+  <h1 class="heading m-0">Javascript Events</h1>
+
+
+
+
+  <div class="container text-center border border-2 border-dark p-0">
+    <h2 class="practice mt-0">Image Change</h2>
+
+    <div class="all_btn text-center">      
+      <button type="button" class="btn btn-dark" onclick="imgChange()">OnClick</button>
+      <button type="button" class="btn btn-dark" ondblclick="imgChange2()">OnDblClick</button>
+      <button type="button" class="btn btn-dark" onmouseover="imgChange3()">OnMouseOver</button>
+      <button type="button" class="btn btn-dark" onmouseout="imgChange4()">OnMouseOut</button>
+    </div>
+
+    <h3 class="text-center">This Image can be Changed with above buttons</h3>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <img src="images/1.jpg" id="d_img" class="img-fluid">       
+      </div>
+    </div>
+
+    <div class="t_change text-center">
+      <h2 class="practice">Text Change</h2>
+      <button type="button" class="btn btn-success" onclick="textChange()">Change Font</button>
+      <button type="button" class="btn btn-success" onclick="textChange2()">Change size</button>
+      <button type="button" class="btn btn-success" onclick="textChange3()">Change Color</button>
+      <button type="button" class="btn btn-success" onclick="textChange4()">Change text</button>
+      <button type="button" class="btn btn-danger" onclick="textReset()">Reset</button>
+
+      <p id="d_text">This is a Text. You can change the text style by clicking the buttons above</p>
+    </div>
+
+
+
+
+
+
+    <!-- bulb -->
+    <h2 class="practice">Bulb On Off</h2>
+
+    <div class="bulb text-center">
+      <img id="bulb_img" src="images/bulboff.gif" class="img-fluid">
+    </div>
+
+    <button type="button" class="btn btn-success" onclick="bulbOnOff()">ON/OFF</button>
+
+
+
+    <h2 class="practice">Alerts</h2>
+    <button type="button" class="btn btn-primary" onclick="alert1()">Alert</button>
+    <button type="button" class="btn btn-primary" onclick="alert2()">LocationHostname</button>
+    <button type="button" class="btn btn-primary" onclick="alert3()">WindowAlert</button>
+    <button type="button" class="btn btn-primary" onclick="alert4()">ConsoleLog</button>
+
+
+    <h2 class="practice mb-0">Form Submission/Reset</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        
+        <form id="myForm" class="border border-1 border-primary">
+          <div class="row justify-content-center mt-5 mb-3">
+            <div class="col-lg-5">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col-lg-5">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-5">
+              <input type="text" class="form-control" placeholder="Email" aria-label="First name">
+            </div>
+            <div class="col-lg-5">
+              <input type="text" class="form-control" placeholder="Address" aria-label="Last name">
+            </div>
+
+          </div>
+          <input type="button" class="btn btn-success mt-5" onclick="submitForm()" value="Submit form">
+          <input type="button" class="btn btn-danger mt-5" onclick="resetForm()" value="Reset form">
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+</section>
+
+
+
+
+    <!--JS Links -->
+    <scrip src="js/jquery-3.6.0.min.js" ></script>   
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+   
+  </body>
+</html>
